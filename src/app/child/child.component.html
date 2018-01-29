@@ -1,0 +1,12 @@
+<p>child  component</p>
+
+  <!--incjalizacja value polem email oraz przekazanie wartości email do metody -->
+ <input [value]= "email" (keyup.enter)="onKeyUpEmail(email)"/>
+<!--incjalizacja value polem email oraz przekazanie aktualnej wartości email do metody -->
+   <input [(value)]= "name" (keyup.enter)="onKeyUpName($event.target.value)"/>
+      <input #surname (keyup.enter)="onKeyUpSureName(surname.value)"/>
+<div *ngFor="let item of blabla">
+  <h3>{{item.address}}</h3>
+ 
+</div>
+ zmienna w child {{zmienna}}
